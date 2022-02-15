@@ -1,0 +1,33 @@
+<%# <p style="color: green"><%= notice %></p> %>
+
+<%# <%= render @entry %> %>
+
+<%# <div> %>
+  <%# <%= link_to "Edit this entry", edit_entry_path(@entry) %> | %>
+  <%# <%= link_to "Back to entries", entries_path %> %>
+
+  <%# <%= button_to "Destroy this entry", @entry, method: :delete %> %>
+<%# </div> %>
+<p id="notice"><%= notice %></p>
+<p>
+  <strong>Meal type</strong>
+  <%= @entry.meal_type %>
+</p>
+<p>
+  <strong>Calories</strong>
+  <%= @entry.calories %>
+</p>
+<p>
+  <strong>Proteins</strong>
+  <%= @entry.proteins %>
+</p>
+<p>
+  <strong>Carbohydrates</strong>
+  <%= @entry.carbohydrates %>
+</p>
+<p>
+  <strong>Fats</strong>
+  <%= @entry.fats %>
+</p>
+    <%= link_to 'Edit', edit_entry_path(entry) %> |
+    <%= link_to 'Back', entries_path%>
